@@ -1,0 +1,2083 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, ../sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, ../sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, ../sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, ../sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, ../sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, ../sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, ../sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, ../sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, ../sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, ../sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, ../sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, ../sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, ../sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, ../sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*  Fonts*/
+/* Colors */
+/* Grid */
+/* Mixins */
+/* Global CSS */
+/* line 65, ../sass/_globalvar.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 71, ../sass/_globalvar.scss */
+.wrapper__for__bg {
+  min-width: 960px;
+  border-bottom: 1px solid #E1E4E6;
+}
+/* line 75, ../sass/_globalvar.scss */
+.wrapper__for__bg > .container {
+  padding: 0 10px;
+  width: 960px;
+}
+
+/* line 81, ../sass/_globalvar.scss */
+.vertical-rhythm {
+  padding: 40px 0;
+}
+
+/******************************
+*
+*  RoyalSlider Default Skin 
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-default.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+/* Background */
+/***************
+*
+*  1. Arrows
+*
+****************/
+/* line 37, ../sass/_rsdef.scss */
+.rsDefault .rsArrow {
+  height: 100%;
+  width: 44px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 21;
+}
+
+/* line 45, ../sass/_rsdef.scss */
+.rsDefault.rsVer .rsArrow {
+  width: 100%;
+  height: 44px;
+}
+
+/* line 50, ../sass/_rsdef.scss */
+.rsDefault.rsVer .rsArrowLeft {
+  top: 0;
+  left: 0;
+}
+
+/* line 51, ../sass/_rsdef.scss */
+.rsDefault.rsVer .rsArrowRight {
+  bottom: 0;
+  left: 0;
+}
+
+/* line 53, ../sass/_rsdef.scss */
+.rsDefault.rsHor .rsArrowLeft {
+  left: 0;
+  top: 0;
+}
+
+/* line 54, ../sass/_rsdef.scss */
+.rsDefault.rsHor .rsArrowRight {
+  right: 0;
+  top: 0;
+}
+
+/* line 56, ../sass/_rsdef.scss */
+.rsDefault .rsArrowIcn {
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  position: absolute;
+  cursor: pointer;
+  background: url("../images/royalSlider/rs-default.png");
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  *background-color: #000;
+  border-radius: 2px;
+}
+
+/* line 74, ../sass/_rsdef.scss */
+.rsDefault .rsArrowIcn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 78, ../sass/_rsdef.scss */
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
+  background-position: -64px -32px;
+}
+
+/* line 79, ../sass/_rsdef.scss */
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
+  background-position: -64px -64px;
+}
+
+/* line 81, ../sass/_rsdef.scss */
+.rsDefault.rsVer .rsArrowLeft .rsArrowIcn {
+  background-position: -96px -32px;
+}
+
+/* line 82, ../sass/_rsdef.scss */
+.rsDefault.rsVer .rsArrowRight .rsArrowIcn {
+  background-position: -96px -64px;
+}
+
+/* line 84, ../sass/_rsdef.scss */
+.rsDefault .rsArrowDisabled .rsArrowIcn {
+  opacity: .2;
+  filter: alpha(opacity=20);
+  *display: none;
+}
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+/* line 93, ../sass/_rsdef.scss */
+.rsDefault .rsBullets {
+  position: absolute;
+  z-index: 35;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  line-height: 8px;
+  overflow: hidden;
+}
+
+/* line 109, ../sass/_rsdef.scss */
+.rsDefault .rsBullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 6px 5px 6px;
+}
+
+/* line 117, ../sass/_rsdef.scss */
+.rsDefault .rsBullet span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #777;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 125, ../sass/_rsdef.scss */
+.rsDefault .rsBullet.rsNavSelected span {
+  background-color: #FFF;
+}
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+/* line 139, ../sass/_rsdef.scss */
+.rsDefault .rsThumbsHor {
+  width: 100%;
+  overflow: visible;
+  height: 70px !important;
+}
+
+/* line 144, ../sass/_rsdef.scss */
+.rsDefault .rsThumbsVer {
+  width: 96px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 151, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsHor .rsThumbsContainer {
+  position: relative;
+  height: 100%;
+}
+
+/* line 155, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsVer .rsThumbsContainer {
+  position: relative;
+  width: 100%;
+}
+
+/* line 159, ../sass/_rsdef.scss */
+.rsDefault .rsThumb {
+  overflow: hidden;
+}
+
+/* line 165, ../sass/_rsdef.scss */
+.rsDefault .rsThumb img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 169, ../sass/_rsdef.scss */
+.rsDefault .rsThumb.rsNavSelected img {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+/* line 173, ../sass/_rsdef.scss */
+.rsDefault .rsTmb {
+  display: block;
+}
+
+/* Thumbnails with text */
+/* line 178, ../sass/_rsdef.scss */
+.rsDefault .rsTmb h5 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  color: #FFF;
+}
+
+/* line 185, ../sass/_rsdef.scss */
+.rsDefault .rsTmb span {
+  color: #DDD;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Thumbnails arrow icons */
+/* line 196, ../sass/_rsdef.scss */
+.rsDefault .rsThumbsArrow {
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 21;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* line 206, ../sass/_rsdef.scss */
+.rsDefault .rsThumbsArrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* line 209, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsVer .rsThumbsArrow {
+  width: 100%;
+  height: 20px;
+}
+
+/* line 213, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft {
+  top: 0;
+  left: 0;
+}
+
+/* line 214, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsVer .rsThumbsArrowRight {
+  bottom: 0;
+  left: 0;
+}
+
+/* line 216, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft {
+  left: 0;
+  top: 0;
+}
+
+/* line 217, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsHor .rsThumbsArrowRight {
+  right: 0;
+  top: 0;
+}
+
+/* line 219, ../sass/_rsdef.scss */
+.rsDefault .rsThumbsArrowIcn {
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+  position: absolute;
+  cursor: pointer;
+  background: url("../images/royalSlider/rs-default.png");
+}
+
+/* line 231, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
+  background-position: -128px -32px;
+}
+
+/* line 232, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
+  background-position: -128px -48px;
+}
+
+/* line 234, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
+  background-position: -144px -32px;
+}
+
+/* line 235, ../sass/_rsdef.scss */
+.rsDefault.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
+  background-position: -144px -48px;
+}
+
+/* line 237, ../sass/_rsdef.scss */
+.rsDefault .rsThumbsArrowDisabled {
+  display: none !important;
+}
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  /* line 241, ../sass/_rsdef.scss */
+  .rsDefault .rsThumb {
+    width: 59px;
+    height: 44px;
+  }
+
+  /* line 245, ../sass/_rsdef.scss */
+  .rsDefault .rsThumbsHor {
+    height: 44px;
+  }
+
+  /* line 248, ../sass/_rsdef.scss */
+  .rsDefault .rsThumbsVer {
+    width: 59px;
+  }
+}
+/***************
+*
+*  4. Tabs
+*
+****************/
+/* line 262, ../sass/_rsdef.scss */
+.rsDefault .rsTabs {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 12px;
+  position: relative;
+}
+
+/* line 269, ../sass/_rsdef.scss */
+.rsDefault .rsTab {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  height: auto;
+  width: auto;
+  color: #333;
+  padding: 5px 13px 6px;
+  min-width: 72px;
+  border: 1px solid #D9D9DD;
+  border-right: 1px solid #f5f5f5;
+  text-decoration: none;
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4);
+  background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
+  background-image: linear-gradient(to bottom, #fefefe, #f4f4f4);
+  -webkit-box-shadow: inset 1px 0 0 #fff;
+  box-shadow: inset 1px 0 0 #fff;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 293, ../sass/_rsdef.scss */
+.rsDefault .rsTab:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 299, ../sass/_rsdef.scss */
+.rsDefault .rsTab:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-right: 1px solid #cfcfcf;
+}
+
+/* line 307, ../sass/_rsdef.scss */
+.rsDefault .rsTab:active {
+  border: 1px solid #D9D9DD;
+  background-color: #f4f4f4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 312, ../sass/_rsdef.scss */
+.rsDefault .rsTab.rsNavSelected {
+  color: #FFF;
+  border: 1px solid #999;
+  text-shadow: 1px 1px #838383;
+  box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+  background: #ACACAC;
+  background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+  background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
+  background-image: linear-gradient(to bottom, #acacac, #bbbbbb);
+}
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+/* line 333, ../sass/_rsdef.scss */
+.rsDefault .rsFullscreenBtn {
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  z-index: 22;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* line 344, ../sass/_rsdef.scss */
+.rsDefault .rsFullscreenIcn {
+  display: block;
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background: url("../images/royalSlider/rs-default.png") 0 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  *background-color: #000;
+  border-radius: 2px;
+}
+
+/* line 357, ../sass/_rsdef.scss */
+.rsDefault .rsFullscreenIcn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 360, ../sass/_rsdef.scss */
+.rsDefault.rsFullscreen .rsFullscreenIcn {
+  background-position: -32px 0;
+}
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+/* line 374, ../sass/_rsdef.scss */
+.rsDefault .rsPlayBtn {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  cursor: pointer;
+}
+
+/* line 382, ../sass/_rsdef.scss */
+.rsDefault .rsPlayBtnIcon {
+  width: 64px;
+  display: block;
+  height: 64px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+  background: url("../images/royalSlider/rs-default.png") no-repeat 0 -32px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  *background-color: #000;
+}
+
+/* line 398, ../sass/_rsdef.scss */
+.rsDefault .rsPlayBtn:hover .rsPlayBtnIcon {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 401, ../sass/_rsdef.scss */
+.rsDefault .rsBtnCenterer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+/* line 406, ../sass/_rsdef.scss */
+.rsDefault .rsCloseVideoBtn {
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  z-index: 500;
+  position: absolute;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+/* line 418, ../sass/_rsdef.scss */
+.rsDefault .rsCloseVideoBtn.rsiOSBtn {
+  top: -38px;
+  right: -6px;
+}
+
+/* line 423, ../sass/_rsdef.scss */
+.rsDefault .rsCloseVideoIcn {
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background: url("../images/royalSlider/rs-default.png") -64px 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  *background-color: #000;
+}
+
+/* line 432, ../sass/_rsdef.scss */
+.rsDefault .rsCloseVideoIcn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+/* line 444, ../sass/_rsdef.scss */
+.rsDefault .rsPreloader {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/royalSlider/preloader-white.gif);
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+/* line 463, ../sass/_rsdef.scss */
+.rsDefault .rsGCaption {
+  position: absolute;
+  float: none;
+  bottom: 6px;
+  left: 6px;
+  text-align: left;
+  background: black;
+  background: rgba(0, 0, 0, 0.75);
+  color: #FFF;
+  padding: 2px 8px;
+  width: auto;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+/* line 482, ../sass/_rsdef.scss */
+.royalSlider {
+  position: relative;
+  direction: ltr;
+}
+
+/* line 492, ../sass/_rsdef.scss */
+.rsWebkit3d .rsSlide {
+  -webkit-transform: translateZ(0);
+}
+
+/* line 497, ../sass/_rsdef.scss */
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 509, ../sass/_rsdef.scss */
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none;
+}
+
+/* line 514, ../sass/_rsdef.scss */
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 522, ../sass/_rsdef.scss */
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 531, ../sass/_rsdef.scss */
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 537, ../sass/_rsdef.scss */
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 544, ../sass/_rsdef.scss */
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer;
+}
+
+/* line 549, ../sass/_rsdef.scss */
+.rsThumb {
+  float: left;
+  position: relative;
+}
+
+/* line 555, ../sass/_rsdef.scss */
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+/* line 564, ../sass/_rsdef.scss */
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  -moz-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  -o-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+/* line 574, ../sass/_rsdef.scss */
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+/* Fullscreen options, very important ^^ */
+/* line 581, ../sass/_rsdef.scss */
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+/* line 594, ../sass/_rsdef.scss */
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  display: none;
+}
+
+/* line 603, ../sass/_rsdef.scss */
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 614, ../sass/_rsdef.scss */
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto;
+}
+
+/* line 619, ../sass/_rsdef.scss */
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 625, ../sass/_rsdef.scss */
+.rsPreloader {
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 630, ../sass/_rsdef.scss */
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 635, ../sass/_rsdef.scss */
+.rsNavItem {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 639, ../sass/_rsdef.scss */
+.rsThumbs {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  z-index: 22;
+}
+
+/* line 646, ../sass/_rsdef.scss */
+.rsTabs {
+  float: left;
+  background: none !important;
+}
+
+/* line 650, ../sass/_rsdef.scss */
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 657, ../sass/_rsdef.scss */
+.rsVideoContainer {
+  /*left: 0;
+  top: 0;
+  position: absolute;*/
+  /*width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;*/
+  width: auto;
+  height: auto;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 672, ../sass/_rsdef.scss */
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s;
+}
+
+/* line 680, ../sass/_rsdef.scss */
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1;
+}
+
+/* line 683, ../sass/_rsdef.scss */
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ios controls over video bug, shifting video */
+/* line 695, ../sass/_rsdef.scss */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 44px;
+}
+
+/* line 704, ../sass/_rsdef.scss */
+.rsABlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15;
+}
+
+/* line 712, ../sass/_rsdef.scss */
+img.rsImg {
+  max-width: none;
+}
+
+/* line 716, ../sass/_rsdef.scss */
+.grab-cursor {
+  cursor: url("../images/royalSlider/grab.png") 8 8, move;
+}
+
+/* line 720, ../sass/_rsdef.scss */
+.grabbing-cursor {
+  cursor: url("../images/royalSlider/grabbing.png") 8 8, move;
+}
+
+/* line 724, ../sass/_rsdef.scss */
+.rsNoDrag {
+  cursor: auto;
+}
+
+/* line 728, ../sass/_rsdef.scss */
+.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url("../images/royalSlider/blank.gif");
+}
+
+/* line 6, ../sass/_rsstyle.scss */
+.royalSlider--container {
+  position: relative;
+}
+
+/* line 10, ../sass/_rsstyle.scss */
+#promoSlider {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+}
+
+/* line 19, ../sass/_rsstyle.scss */
+.rsNav:before, .rsNav:after {
+  height: 70px;
+  width: 60px;
+  position: absolute;
+  content: '';
+  z-index: 23;
+  top: 0;
+}
+
+/* line 29, ../sass/_rsstyle.scss */
+.splat-royalSlider__arrow__left, .splat-royalSlider__arrow__right {
+  top: 209px;
+  position: absolute;
+  z-index: 1;
+  outline: none !important;
+}
+/* line 35, ../sass/_rsstyle.scss */
+.splat-royalSlider__arrow__left.disabled, .splat-royalSlider__arrow__right.disabled {
+  opacity: 0.2;
+}
+
+/* line 40, ../sass/_rsstyle.scss */
+.splat-royalSlider__arrow__left {
+  left: -51px;
+}
+@media only screen and (max-width: 1043px) {
+  /* line 40, ../sass/_rsstyle.scss */
+  .splat-royalSlider__arrow__left {
+    left: 0;
+  }
+}
+
+/* line 48, ../sass/_rsstyle.scss */
+.splat-royalSlider__arrow__right {
+  right: -51px;
+}
+@media only screen and (max-width: 1043px) {
+  /* line 48, ../sass/_rsstyle.scss */
+  .splat-royalSlider__arrow__right {
+    right: 0;
+  }
+}
+
+/* line 56, ../sass/_rsstyle.scss */
+.rsNavItem {
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  height: 100% !important;
+  width: 255px !important;
+  background: #eee;
+}
+/* line 63, ../sass/_rsstyle.scss */
+.rsNavItem > span {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #CF003D;
+}
+
+/* line 70, ../sass/_rsstyle.scss */
+.rsNavSelected > .rsTmb {
+  color: #fff;
+}
+
+/* line 75, ../sass/_rsstyle.scss */
+.triagle {
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #C60032;
+  position: absolute;
+  top: 70px;
+}
+
+/* line 1, ../sass/_sprit.scss */
+.splat-sprite, .splat-royalSlider__arrow__left, .splat-royalSlider__arrow__right {
+  background: url("../images/sprite.png") no-repeat;
+}
+
+/* line 5, ../sass/_sprit.scss */
+.splat-royalSlider__arrow__left {
+  background-position: 0 0;
+  height: 83px;
+  width: 43px;
+}
+
+/* line 11, ../sass/_sprit.scss */
+.splat-royalSlider__arrow__right {
+  background-position: 0 -83px;
+  height: 83px;
+  width: 43px;
+}
+
+/* line 5, ../sass/_cont.scss */
+.content {
+  padding-bottom: 68px;
+}
+
+/* line 9, ../sass/_cont.scss */
+.content--history, .content--info__list {
+  border-top: 5px solid #D7D8D9;
+}
+
+/* line 13, ../sass/_cont.scss */
+.content--history {
+  margin-top: -41px;
+  padding: 0 19px 26px 38px;
+}
+/* line 17, ../sass/_cont.scss */
+.content--history > p {
+  padding-top: 30px;
+  padding-right: 3px;
+}
+/* line 21, ../sass/_cont.scss */
+.content--history > p > a {
+  text-decoration: underline;
+}
+/* line 47, ../sass/_globalvar.scss */
+.content--history > p > a:hover {
+  color: #e90045;
+}
+/* line 52, ../sass/_globalvar.scss */
+.content--history > p > a:hover {
+  text-decoration: none;
+}
+/* line 56, ../sass/_globalvar.scss */
+.content--history > p > a:active {
+  color: #ff5083;
+}
+
+/* line 27, ../sass/_cont.scss */
+.content--info__list {
+  width: 220px;
+  padding: 18px 0 15px 28px;
+}
+/* line 31, ../sass/_cont.scss */
+.content--info__list > a {
+  padding-bottom: 10px;
+  display: block;
+  text-decoration: underline;
+}
+/* line 47, ../sass/_globalvar.scss */
+.content--info__list > a:hover {
+  color: #e90045;
+}
+/* line 52, ../sass/_globalvar.scss */
+.content--info__list > a:hover {
+  text-decoration: none;
+}
+/* line 56, ../sass/_globalvar.scss */
+.content--info__list > a:active {
+  color: #ff5083;
+}
+
+/* line 38, ../sass/_cont.scss */
+.content--info__buy {
+  margin-top: 20px;
+  width: 220px;
+  padding: 28px 0 27px 26px;
+  position: relative;
+}
+/* line 44, ../sass/_cont.scss */
+.content--info__buy:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: #D7D8D9 #fff;
+}
+
+/* line 55, ../sass/_cont.scss */
+.content__meet__pic {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 46px;
+  margin-right: 18px;
+  background-image: url("../images/kap.png");
+}
+
+/* line 64, ../sass/_cont.scss */
+.content--meet--where__to__buy {
+  display: block;
+  font-size: 21px;
+  letter-spacing: 1.2px;
+  line-height: 1.3;
+  text-decoration: none;
+}
+/* line 47, ../sass/_globalvar.scss */
+.content--meet--where__to__buy:hover {
+  color: #e90045;
+}
+/* line 52, ../sass/_globalvar.scss */
+.content--meet--where__to__buy:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/_globalvar.scss */
+.content--meet--where__to__buy:active {
+  color: #ff5083;
+}
+
+/* line 72, ../sass/_cont.scss */
+.content--meet--production {
+  color: #3E3F40;
+}
+
+/* line 76, ../sass/_cont.scss */
+.main__content {
+  padding-top: 70px;
+}
+
+/* line 81, ../sass/_cont.scss */
+.content--main__content--content__manager > img {
+  max-width: 100%;
+  margin: 0 36px 20px 36px;
+  float: right;
+}
+/* line 87, ../sass/_cont.scss */
+.content--main__content--content__manager > div {
+  float: right;
+  width: 460px;
+  font-size: 18px;
+}
+/* line 92, ../sass/_cont.scss */
+.content--main__content--content__manager > div > img {
+  max-width: 100%;
+  margin: auto;
+}
+/* line 97, ../sass/_cont.scss */
+.content--main__content--content__manager > div > * {
+  display: block;
+  padding-top: 18px;
+}
+/* line 101, ../sass/_cont.scss */
+.content--main__content--content__manager > div > *:first-child {
+  padding-top: 0;
+  margin-top: -.4em;
+}
+/* line 107, ../sass/_cont.scss */
+.content--main__content--content__manager > div > p {
+  padding-top: 20px;
+  line-height: 1.667;
+}
+/* line 112, ../sass/_cont.scss */
+.content--main__content--content__manager > div > i {
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #808080;
+}
+
+/* line 1, ../sass/_hed.scss */
+.header.container {
+  padding: 0 10px;
+}
+
+/* line 5, ../sass/_hed.scss */
+.header--logo__image {
+  margin-bottom: 10px;
+}
+
+/* line 9, ../sass/_hed.scss */
+.header--logo__text {
+  display: block;
+  color: #808080;
+  text-decoration: none;
+  letter-spacing: -.2px;
+}
+/* line 43, ../sass/_globalvar.scss */
+.header--logo__text:hover {
+  color: #5a5a5a;
+}
+/* line 52, ../sass/_globalvar.scss */
+.header--logo__text:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/_globalvar.scss */
+.header--logo__text:active {
+  color: #d9d9d9;
+}
+
+/* line 15, ../sass/_hed.scss */
+.header--language > a {
+  white-space: nowrap;
+  letter-spacing: -.2px;
+  display: block;
+  font-size: 12px;
+  padding-left: 4px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #808080;
+  text-decoration: underline;
+}
+/* line 43, ../sass/_globalvar.scss */
+.header--language > a:hover {
+  color: #5a5a5a;
+}
+/* line 52, ../sass/_globalvar.scss */
+.header--language > a:hover {
+  text-decoration: none;
+}
+/* line 56, ../sass/_globalvar.scss */
+.header--language > a:active {
+  color: #d9d9d9;
+}
+/* line 25, ../sass/_hed.scss */
+.header--language > a:first-line {
+  line-height: 1;
+}
+
+/* line 30, ../sass/_hed.scss */
+.header--navigation {
+  padding-left: 83px;
+}
+/* line 33, ../sass/_hed.scss */
+.header--navigation > a {
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 11px;
+  width: 160px;
+  overflow: hidden;
+  text-decoration: underline;
+}
+/* line 47, ../sass/_globalvar.scss */
+.header--navigation > a:hover {
+  color: #e90045;
+}
+/* line 52, ../sass/_globalvar.scss */
+.header--navigation > a:hover {
+  text-decoration: none;
+}
+/* line 56, ../sass/_globalvar.scss */
+.header--navigation > a:active {
+  color: #ff5083;
+}
+
+/* line 43, ../sass/_hed.scss */
+.header--social-networks {
+  min-height: 77px;
+}
+/* line 46, ../sass/_hed.scss */
+.header--social-networks:first-child {
+  margin-top: -.1em;
+}
+/* line 50, ../sass/_hed.scss */
+.header--social-networks > span {
+  letter-spacing: -.3px;
+  padding-bottom: 5px;
+  line-height: 0.8;
+  color: #808080;
+  display: block;
+  text-align: right;
+}
+/* line 57, ../sass/_hed.scss */
+.header--social-networks > span > a[href*='facebook'] {
+  color: #3b5998;
+  text-decoration: none;
+}
+/* line 43, ../sass/_globalvar.scss */
+.header--social-networks > span > a[href*='facebook']:hover {
+  color: #263961;
+}
+/* line 52, ../sass/_globalvar.scss */
+.header--social-networks > span > a[href*='facebook']:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/_globalvar.scss */
+.header--social-networks > span > a[href*='facebook']:active {
+  color: #a8b9dd;
+}
+
+/* line 63, ../sass/_hed.scss */
+.header--form {
+  float: right;
+  position: relative;
+}
+
+/* line 68, ../sass/_hed.scss */
+.header--form__input {
+  height: 25px;
+  width: 146.666666666666px;
+  border: 1px solid #E0E0E0;
+  -moz-box-shadow: 2px 2px 3px rgba(237, 237, 237, 0.8) inset;
+  -webkit-box-shadow: 2px 2px 3px rgba(237, 237, 237, 0.8) inset;
+  box-shadow: 2px 2px 3px rgba(237, 237, 237, 0.8) inset;
+  padding: 0 20px 0 5px;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/* line 76, ../sass/_hed.scss */
+.header--form__input:focus {
+  width: 220px;
+  border: 1px solid #bababa;
+}
+
+/* line 82, ../sass/_hed.scss */
+.header--form--search {
+  width: 11px;
+  height: 11px;
+  background: transparent;
+  position: absolute;
+  right: 4px;
+  top: 7px;
+  border: none;
+  background: url("../images/search.gif") no-repeat;
+}
+
+/* Gradients */
+/* line 5, ../sass/_grad.scss */
+.cssgradients header, .cssgradients .content--history, .cssgradients .content--info__list, .cssgradients .content--info__buy {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjVmNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U3ZWNlZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f5f7), color-stop(100%, #e7ecee));
+  background-image: -moz-linear-gradient(#f3f5f7, #e7ecee);
+  background-image: -webkit-linear-gradient(#f3f5f7, #e7ecee);
+  background-image: linear-gradient(#f3f5f7, #e7ecee);
+}
+/* line 9, ../sass/_grad.scss */
+.cssgradients .rsNav {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZTllOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RjZGZlMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7e9e9), color-stop(100%, #dcdfe0));
+  background-image: -moz-linear-gradient(#e7e9e9, #dcdfe0);
+  background-image: -webkit-linear-gradient(#e7e9e9, #dcdfe0);
+  background-image: linear-gradient(#e7e9e9, #dcdfe0);
+}
+/* line 13, ../sass/_grad.scss */
+.cssgradients .rsNavSelected {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q2MDA0ZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M2MDAzMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d6004f), color-stop(100%, #c60032));
+  background-image: -moz-linear-gradient(#d6004f, #c60032);
+  background-image: -webkit-linear-gradient(#d6004f, #c60032);
+  background-image: linear-gradient(#d6004f, #c60032);
+}
+/* line 18, ../sass/_grad.scss */
+.cssgradients .rsNav:before {
+  left: 0;
+  background: -ms-linear-gradient(left, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWZmMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VkZWZmMSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #edeff1), color-stop(100%, rgba(237, 239, 241, 0)));
+  background-image: -moz-linear-gradient(left, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  background-image: -webkit-linear-gradient(left, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  background-image: linear-gradient(to right, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+}
+/* line 24, ../sass/_grad.scss */
+.cssgradients .rsNav:after {
+  background: -ms-linear-gradient(right, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  /* IE10+ */
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjAuNSIgeDI9IjAuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWZmMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VkZWZmMSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #edeff1), color-stop(100%, rgba(237, 239, 241, 0)));
+  background-image: -moz-linear-gradient(right, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  background-image: -webkit-linear-gradient(right, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  background-image: linear-gradient(to left, #edeff1 0%, rgba(237, 239, 241, 0) 100%);
+  right: 0;
+}
+
+/* Pointerevents */
+/* line 38, ../sass/_grad.scss */
+.pointerevents .rsNav:before, .pointerevents .rsNav:after {
+  pointer-events: none;
+}
+
+/* line 3, ../sass/_fut.scss */
+footer.container {
+  padding: 50px 10px 20px 10px;
+  width: 960px;
+  margin: auto;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: 12px;
+}
+
+/* line 11, ../sass/_fut.scss */
+.footer--left__column {
+  padding-right: 58px;
+}
+
+/* line 15, ../sass/_fut.scss */
+.footer--left__column--logo {
+  width: 39px;
+  height: 37px;
+  display: block;
+  background-image: url("../images/logo2.png");
+}
+
+/* line 22, ../sass/_fut.scss */
+.footer--left__column--nav--links {
+  padding-left: 16px;
+}
+/* line 25, ../sass/_fut.scss */
+.footer--left__column--nav--links > a {
+  padding-right: 3px;
+  text-decoration: underline;
+}
+/* line 47, ../sass/_globalvar.scss */
+.footer--left__column--nav--links > a:hover {
+  color: #e90045;
+}
+/* line 52, ../sass/_globalvar.scss */
+.footer--left__column--nav--links > a:hover {
+  text-decoration: none;
+}
+/* line 56, ../sass/_globalvar.scss */
+.footer--left__column--nav--links > a:active {
+  color: #ff5083;
+}
+
+/* line 31, ../sass/_fut.scss */
+.footer--left__column--nav--links--copyright {
+  color: #282726;
+  display: block;
+  margin-bottom: -2px;
+}
+
+/* line 37, ../sass/_fut.scss */
+.footer--facebook {
+  padding-left: 8px;
+}
+
+/* line 41, ../sass/_fut.scss */
+.footer--right__column {
+  padding-left: 58px;
+}
+/* line 44, ../sass/_fut.scss */
+.footer--right__column > p {
+  color: #7F7F7F;
+  line-height: 1.3;
+}
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+/* line 19, ../sass/_swip2.scss */
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+/* line 31, ../sass/_swip2.scss */
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease;
+}
+
+/* line 60, ../sass/_swip2.scss */
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+/* line 68, ../sass/_swip2.scss */
+.swiper-slide {
+  float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+/* line 73, ../sass/_swip2.scss */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+
+/* line 76, ../sass/_swip2.scss */
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+/* line 84, ../sass/_swip2.scss */
+.swiper-container {
+  /* Specify Swiper's Size: */
+  /*width:200px;
+  height: 100px;*/
+}
+
+/* line 90, ../sass/_swip2.scss */
+.swiper-slide {
+  /* Specify Slides's Size: */
+  /*width: 100%;
+  height: 100%;*/
+}
+
+/* line 96, ../sass/_swip2.scss */
+.swiper-slide-active {
+  /* Specific active slide styling: */
+}
+
+/* line 100, ../sass/_swip2.scss */
+.swiper-slide-visible {
+  /* Specific visible slide styling: */
+}
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+/* line 107, ../sass/_swip2.scss */
+.swiper-pagination-switch {
+  /* Stylize pagination button: */
+}
+
+/* line 111, ../sass/_swip2.scss */
+.swiper-active-switch {
+  /* Specific active button style: */
+}
+
+/* line 115, ../sass/_swip2.scss */
+.swiper-visible-switch {
+  /* Specific visible button style: */
+}
+
+/* line 120, ../sass/_swip2.scss */
+.swiper-scrollbar {
+  border-radius: 10px;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 125, ../sass/_swip2.scss */
+.swiper-scrollbar-drag {
+  height: 100%;
+  position: relative;
+}
+
+/* line 129, ../sass/_swip2.scss */
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+/* line 1, ../sass/_swip.scss */
+.swiper {
+  background: #F0F3F5;
+}
+
+/* line 5, ../sass/_swip.scss */
+.swiper-container {
+  min-height: 399px;
+}
+
+/* line 9, ../sass/_swip.scss */
+.swiper-scrollbar {
+  z-index: 1;
+  width: 31.91%;
+  height: 5px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 20, ../sass/_swip.scss */
+.swiper-scrollbar-drag {
+  background: #D0003E;
+  border-radius: 0;
+}
+
+/* line 25, ../sass/_swip.scss */
+.swiper-slide {
+  width: 9999px;
+}
+/* line 28, ../sass/_swip.scss */
+.swiper-slide > section {
+  float: left;
+  width: 240px;
+}
+/* line 32, ../sass/_swip.scss */
+.swiper-slide > section:nth-child(4n+4) {
+  width: 220px;
+}
+/* line 36, ../sass/_swip.scss */
+.swiper-slide > section > p {
+  padding-right: 15px;
+}
+/* line 40, ../sass/_swip.scss */
+.swiper-slide > section > div {
+  height: 90px;
+  position: relative;
+}
+/* line 44, ../sass/_swip.scss */
+.swiper-slide > section > div > img {
+  position: absolute;
+  bottom: 0;
+}
+/* line 50, ../sass/_swip.scss */
+.swiper-slide > section > h3 {
+  color: #3E3F40;
+  font-size: 23px;
+  margin: 0;
+  padding: 18px 15px 20px 0;
+}

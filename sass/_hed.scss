@@ -1,0 +1,91 @@
+.header.container {
+	padding: 0 10px;
+}
+
+	.header--logo__image {
+		margin-bottom: 10px;
+	}
+
+	.header--logo__text {
+		display: block;
+		@include link_hover($grey-link, true, underline);
+		letter-spacing: -.2px;
+	}
+
+	.header--language>a {
+		white-space: nowrap;
+		letter-spacing: -.2px;
+		display: block;
+		font-size: 12px;
+		padding-left: 4px;
+		font-style: italic;
+		text-transform: capitalize;
+		@include link_hover($grey-link, true, none);
+
+		&:first-line {
+			line-height: 1;
+		}
+	}
+
+	.header--navigation {
+		padding-left: 83px;
+
+		>a {
+			display: inline-block;
+			line-height: 1;
+			margin-bottom: 11px;
+			width: 160px;
+			overflow: hidden;
+			@include link_hover($brand-primary, false, none, 5%, true);
+		}
+	}
+
+		.header--social-networks {
+			min-height: 77px;
+
+			&:first-child{
+				margin-top: -.1em;
+			}
+
+			>span {
+				letter-spacing: -.3px;
+				padding-bottom: 5px;
+				line-height: 0.8;
+				color: $grey-link;
+				display: block;
+				text-align: right;
+				>a[href*='facebook'] {
+					@include link_hover($facebook-link-color);
+				}
+			}
+		}
+
+		.header--form {
+			float: right;
+			position: relative;
+		}
+
+			.header--form__input {
+				height: 25px;
+				width: 146.666666666666px;
+				border: 1px solid #E0E0E0;
+				@include box-shadow(2px 2px 3px rgba(237, 237, 237, 0.8) inset);
+				padding: 0 20px 0 5px;
+				@include transition-duration(1s);
+
+				&:focus {
+					width: 220px;
+					border: 1px solid darken(#E0E0E0, 15%);				
+				}
+			}
+
+			.header--form--search {
+				width: 11px;
+				height: 11px;
+				background: transparent;
+				position: absolute;
+				right: 4px;
+				top: 7px;
+				border: none;
+				background: url('../images/search.gif') no-repeat;
+			}

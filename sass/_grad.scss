@@ -1,0 +1,42 @@
+/* Gradients */
+
+
+.cssgradients {
+	header, .content--history, .content--info__list, .content--info__buy{
+		@include background-image(linear-gradient(#F3F5F7, #E7ECEE));
+	}
+
+	.rsNav {
+		@include background-image(linear-gradient(#E7E9E9, #DCDFE0));
+	}
+
+	.rsNavSelected {
+		@include background-image(linear-gradient(#d6004f, #c60032));
+	}
+
+	.rsNav {
+		&:before {
+			left: 0; //FF
+			background: -ms-linear-gradient(left, rgba(237,239,241,1) 0%, rgba(237,239,241,0) 100%); 
+			@include background-image(linear-gradient(left, rgba(237,239,241,1) 0%, rgba(237,239,241,0) 100%));
+		}
+
+		&:after {
+			background: -ms-linear-gradient(right, rgba(237,239,241,1) 0%, rgba(237,239,241,0) 100%); /* IE10+ */
+			@include background-image(linear-gradient(right, rgba(237,239,241,1) 0%, rgba(237,239,241,0) 100%));
+			right: 0;
+		}
+	}
+}
+
+
+/* Pointerevents */
+
+
+.pointerevents {
+	.rsNav {
+		&:before, &:after {
+			pointer-events: none;
+		}
+	} 
+}

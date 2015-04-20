@@ -1,0 +1,15 @@
+.splat-sprite, .splat-royalSlider__arrow__left, .splat-royalSlider__arrow__right {
+	background: url('../images/sprite.png') no-repeat;
+}
+
+.splat-royalSlider__arrow__left {
+	background-position: 0 0;
+	height: 83px;
+	width: 43px;
+}
+
+.splat-royalSlider__arrow__right {
+	background-position: 0 -83px;
+	height: 83px;
+	width: 43px;
+}

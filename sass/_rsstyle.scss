@@ -1,0 +1,82 @@
+$thumbHeight: 70px;
+$pseudoElementWidth: 60px;
+$indentButtonSlider: -51px;
+$mediaIndentButtonSlider: 0;
+
+.royalSlider--container {
+position: relative;
+}
+
+#promoSlider {
+	width: 100%;
+	height: 440px;
+	overflow: hidden;
+
+}
+
+.rsNav {
+
+	&:before, &:after {
+	height: $thumbHeight;
+	width: $pseudoElementWidth;
+	position: absolute;
+	content: '';
+	z-index: 23;
+	top: 0;
+	}
+}
+
+.splat-royalSlider__arrow__left, .splat-royalSlider__arrow__right {
+	top: 209px;
+	position: absolute;
+	z-index: 1;
+	outline: none !important;
+
+	&.disabled {
+	opacity: 0.2;
+	}
+}
+
+.splat-royalSlider__arrow__left {
+	left: $indentButtonSlider;
+	
+	@media only screen and (max-width: 1043px) {
+	left: $mediaIndentButtonSlider;
+	}
+}
+
+.splat-royalSlider__arrow__right {
+	right: $indentButtonSlider;
+
+	@media only screen and (max-width: 1043px) {
+	right: $mediaIndentButtonSlider;
+	}
+}
+
+	.rsNavItem {
+		text-align: center;
+		line-height: $thumbHeight;
+		cursor: pointer;
+		height: 100% !important;
+		width: 255px !important; 
+		background: #eee;
+		>span {
+			text-transform: uppercase;
+			font-size: 21px;
+			color: $brand-primary;
+		}
+		}
+
+		.rsNavSelected >.rsTmb {
+			color: #fff;
+		}
+
+
+	.triagle {
+		border-width: 10px;
+		border-style: solid;
+		border-color: transparent; 
+		border-top-color: #C60032;
+		position: absolute;
+		top: $thumbHeight;
+	}

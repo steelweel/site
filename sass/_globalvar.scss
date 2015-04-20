@@ -1,0 +1,83 @@
+/*  Fonts*/
+
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+$font-size-base: 14px;
+
+
+/* Colors */
+
+
+$brand-primary: #CF003D;
+$grey-link:	#808080;
+$facebook-link-color: #3b5998;
+$gray-dark: #616366;
+
+
+/* Grid */
+
+
+$container-width: 960px;
+$grid-gutter-width: 0; //padding within columns
+
+
+/* Mixins */
+
+
+$default-percent: 15%;
+$default-decoration: underline;
+$default-light: false;
+@mixin link_hover($colorLink: $brand-primary, $useColorOnText: true, $underline: $default-decoration, $percent: $default-percent, $light: $default-light){
+
+	@if $useColorOnText == true {
+		color: $colorLink;		
+	}
+
+	@if $underline == underline {
+		text-decoration: none;
+	} @else {
+		text-decoration: underline;
+	}
+
+	@if $light == false{
+		&:hover {
+			color: darken($colorLink, $percent);
+		}
+	} @else if $light == true{
+		&:hover {
+			color: lighten($colorLink, $percent);
+		}		
+	}
+
+	&:hover {
+		text-decoration: $underline;
+	}
+
+	&:active {
+		color: lighten($colorLink, $percent + 20%);
+	}
+
+}
+
+
+/* Global CSS */
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+$rhythm: 40px;
+$border-vertical-rhythm: 1px;
+.wrapper__for__bg {
+	min-width: $container-width;
+	border-bottom: $border-vertical-rhythm solid #E1E4E6;
+
+	>.container {
+		padding: 0 10px;
+		width: $container-width;
+	}
+}
+
+.vertical-rhythm {
+	padding: $rhythm 0;
+}

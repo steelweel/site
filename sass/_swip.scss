@@ -1,0 +1,57 @@
+.swiper {
+	background: #F0F3F5;
+}
+
+	.swiper-container {
+	min-height: 399px;
+	}
+
+	.swiper-scrollbar {
+	z-index: 1;
+	width: 31.91%;
+	height: 5px;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	}
+
+	.swiper-scrollbar-drag {
+		background: #D0003E;
+		border-radius: 0;
+	}
+
+	.swiper-slide {
+		width: 9999px;
+
+		>section {
+		float: left;
+		width: 240px;
+		
+		&:nth-child(4n+4) {
+			width: 220px;
+		}
+
+			>p {
+			padding-right: 15px;
+			}
+
+		>div {
+			height: 90px;
+			position: relative;
+
+			>img {
+				position: absolute;
+				bottom: 0;
+			}
+		}
+
+		>h3 {
+			color: #3E3F40;
+			font-size: 23px;
+			margin: 0;
+			padding: 18px 15px 20px 0;
+		}
+		}
+	}
